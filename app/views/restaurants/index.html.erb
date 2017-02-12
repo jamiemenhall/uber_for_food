@@ -1,5 +1,10 @@
 Our Restaurants
 <br><br>
+<ul class="list-group">
 <% @restaurants.each do |restaurant| %>
-<%= link_to restaurant.name, restaurant_path(restaurant) %><br>
+	<li class="list-group-item">
+	<%= link_to restaurant.name, restaurant_path(restaurant)%>
+	</li>
+	<br>
 <% end %>
+</ul>
