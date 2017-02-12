@@ -1,5 +1,5 @@
 Our Restaurants
 <br><br>
-<% @restaurants.each do |a| %>
-<%= link_to a.name, restaurant_path(a) %><br>
+<% @restaurants.each do |restaurant| %>
+<%= link_to restaurant.name, restaurant_path(restaurant) %><br>
 <% end %>
